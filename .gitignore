@@ -1,0 +1,30 @@
+# Python bytecode and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local virtual environments
+.venv/
+venv/
+env/
+
+# Local settings and secrets
+.env
+.env.*
+!.env.example
+
+# macOS metadata
+.DS_Store
+._*
+
+# Generated experiment plots and default CSV database
+[0-9][0-9][0-9][0-9][0-9][0-9]_*.png
+database.csv
+
+# Keep measurement TXT files and selection JSON files available for version control.
+# JSON files contain manually selected intervals and confirmed baselines.
