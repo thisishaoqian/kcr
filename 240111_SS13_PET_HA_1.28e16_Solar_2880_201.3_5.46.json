@@ -1,0 +1,113 @@
+{
+  "source_file": "240111_SS13_PET_HA_1.28e16_Solar_2880_201.3_5.46.txt",
+  "metadata": {
+    "experiment_date": "2024-01-11",
+    "label": "SS13",
+    "plastic_name": "PET",
+    "probe_gas_name": "HA",
+    "condition": "Solar",
+    "condition_time": 2880.0,
+    "condition_time_units": "mins",
+    "material_weight": 201.3,
+    "material_weight_units": "mg",
+    "bet_surface": 5.46,
+    "bet_surface_units": "cm^2/mg",
+    "area": 1099.098,
+    "area_units": "cm^2",
+    "flow_rate": 1.28e+16,
+    "flow_rate_units": "molecules/s"
+  },
+  "phases": {
+    "uptake": {
+      "source_file": "240111_SS13_PET_HA_1.28e16_Solar_2880_201.3_5.46.txt",
+      "image_file": "240111_SS13_PET_HA_1.28e16_Solar_2880_201.3_5.46_uptake.png",
+      "duration_seconds": 1601.0099999999998,
+      "points": [
+        {
+          "role": "start",
+          "measurement_index": 6332,
+          "time": "2024-01-11T13:51:45.650000",
+          "elapsed_seconds": 1583.15,
+          "LockinAmplifier": 0.55
+        },
+        {
+          "role": "end",
+          "measurement_index": 12736,
+          "time": "2024-01-11T14:18:26.660000",
+          "elapsed_seconds": 3184.16,
+          "LockinAmplifier": 0.533
+        }
+      ],
+      "phase": "uptake",
+      "flow_rate": 1.28e+16,
+      "flow_rate_units": "molecules/s",
+      "area": {
+        "value": 47.079092403951954,
+        "units": "LockinAmplifier units * seconds",
+        "method": "Signed trapezoidal integral of baseline minus data; both endpoints must be accepted",
+        "upper_threshold": 0.6527809001097695,
+        "exclusion_rule": "value > baseline + 0.20 * abs(baseline), or nonfinite data",
+        "excluded_points": 0,
+        "included_duration_seconds": 1601.0099999999998
+      },
+      "uptake": {
+        "molecules": 1.1077757624389774e+18,
+        "formula": "flow_rate * area / uptake_baseline",
+        "uptake_baseline": 0.543984083424808
+      },
+      "baseline": {
+        "LockinAmplifier": 0.543984083424808,
+        "slope": 0.0,
+        "elapsed_start_seconds": 1583.15,
+        "elapsed_end_seconds": 3184.16,
+        "image_file": "240111_SS13_PET_HA_1.28e16_Solar_2880_201.3_5.46_uptake_baseline.png"
+      }
+    },
+    "desorption": {
+      "source_file": "240111_SS13_PET_HA_1.28e16_Solar_2880_201.3_5.46.txt",
+      "image_file": "240111_SS13_PET_HA_1.28e16_Solar_2880_201.3_5.46_desorb.png",
+      "duration_seconds": 745.75,
+      "points": [
+        {
+          "role": "start",
+          "measurement_index": 28437,
+          "time": "2024-01-11T15:23:51.960000",
+          "elapsed_seconds": 7109.46,
+          "LockinAmplifier": 0.011
+        },
+        {
+          "role": "end",
+          "measurement_index": 31420,
+          "time": "2024-01-11T15:36:17.710000",
+          "elapsed_seconds": 7855.21,
+          "LockinAmplifier": 0.02
+        }
+      ],
+      "phase": "desorption",
+      "flow_rate": 1.28e+16,
+      "flow_rate_units": "molecules/s",
+      "uptake_baseline": 0.543984083424808,
+      "area": {
+        "value": 15.3988200000003,
+        "units": "LockinAmplifier units * seconds",
+        "method": "Signed trapezoidal integral of data minus baseline; both endpoints must be accepted",
+        "upper_threshold": null,
+        "exclusion_rule": "nonfinite data",
+        "excluded_points": 0,
+        "included_duration_seconds": 745.75
+      },
+      "desorption": {
+        "molecules": 3.6233577783944224e+17,
+        "formula": "flow_rate * area / uptake_baseline",
+        "uptake_baseline": 0.543984083424808
+      },
+      "baseline": {
+        "LockinAmplifier": 0.011,
+        "slope": 0.0,
+        "elapsed_start_seconds": 7109.46,
+        "elapsed_end_seconds": 7855.21,
+        "image_file": "240111_SS13_PET_HA_1.28e16_Solar_2880_201.3_5.46_desorb_baseline.png"
+      }
+    }
+  }
+}
